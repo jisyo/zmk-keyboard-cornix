@@ -144,6 +144,16 @@
             bindings = <&kp LC(SPACE)>;
             key-positions = <19 20>;
         };
+
+        leftboot {
+            bindings = <&bootloader>;
+            key-positions = <30 43>;
+        };
+
+        rightboot {
+            bindings = <&bootloader>;
+            key-positions = <31 44>;
+        };
     };
 
     keymap {
