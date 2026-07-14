@@ -170,10 +170,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESC         &kp Q         &kp W  &kp E  &kp R         &kp T                      &kp Y      &kp U          &kp I      &kp O    &kp P     &kp BSLH
-&kp TAB         &kp A         &kp S  &kp D  &lt 2 F       &kp G                      &kp H      &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &hm_l LGUI Z  &kp X  &kp C  &kp V         &kp B        &none  &none  &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-&kp RCTRL       &none         &none  &mo 3  &kp LEFT_ALT  &lt 1 SPACE                &kp ENTER  &kp BACKSPACE  &mo 0      &none    &none     &kp RCTRL
+&kp ESC         &kp Q         &kp W  &kp E  &kp R         &kp T                      &kp Y        &kp U          &kp I      &kp O    &kp P     &kp BSLH
+&kp TAB         &kp A         &kp S  &kp D  &lt 2 F       &kp G                      &kp H        &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &hm_l LGUI Z  &kp X  &kp C  &kp V         &kp B        &none  &none  &kp N        &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+&kp RCTRL       &none         &none  &mo 3  &kp LEFT_ALT  &lt 1 SPACE                &lt 1 ENTER  &kp BACKSPACE  &mo 0      &none    &none     &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -190,10 +190,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp TILDE     &kp EXCL  &kp AT  &kp HASH   &kp DOLLAR    &kp PERCENT                  &kp CARET        &kp AMPS       &kp ASTRK  &kp N0  &kp MINUS             &kp EQUAL
-&kp N0        &kp N1    &kp N2  &kp N3     &kp N4        &kp N5                       &kp N6           &kp N7         &kp N8     &kp N9  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&none         &trans    &trans  &trans     &trans        &trans       &trans  &trans  &trans           &trans         &trans     &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&kp LEFT_WIN  &none     &none   &kp LCTRL  &kp LEFT_ALT  &none                        &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RCTRL  &none   &kp LEFT_BRACE        &kp RIGHT_BRACE
+&kp N0          &kp N1           &kp N2       &kp N3     &kp N4        &kp N5                       &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &none
+&kp TILDE       &kp EXCLAMATION  &kp AT_SIGN  &kp HASH   &kp DOLLAR    &kp PERCENT                  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
+&kp LEFT_SHIFT  &trans           &trans       &trans     &trans        &trans       &trans  &trans  &trans     &trans         &trans        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_SHIFT
+&kp LEFT_WIN    &none            &none        &kp LCTRL  &kp LEFT_ALT  &none                        &none      &kp RIGHT_ALT  &kp RCTRL     &kp LEFT_BRACE        &kp RIGHT_BRACE        &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -201,10 +201,10 @@
 
         arrow {
             bindings = <
-&trans  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp LEFT_BRACE  &trans     &trans                     &trans    &trans    &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp DEL
-&trans  &none                 &none             &none           &none      &trans                     &kp LEFT  &kp DOWN  &kp UP           &kp RIGHT          &kp MINUS              &kp EQUAL
-&trans  &trans                &trans            &trans          &trans     &trans     &trans  &trans  &trans    &trans    &trans           &trans             &trans                 &trans
-&trans  &trans                &trans            &mkp MCLK       &mkp RCLK  &mkp LCLK                  &trans    &trans    &trans           &bt BT_SEL 0       &bt BT_SEL 1           &bt BT_SEL 2
+&trans  &none   &none   &none      &trans     &trans                     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE
+&trans  &none   &none   &none      &none      &trans                     &kp LEFT              &kp DOWN               &kp UP            &kp RIGHT          &kp MINUS       &kp EQUAL
+&trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans  &mmv MOVE_LEFT        &mmv MOVE_DOWN         &mmv MOVE_UP      &mmv MOVE_RIGHT    &trans          &trans
+&trans  &trans  &trans  &mkp MCLK  &mkp RCLK  &mkp LCLK                  &trans                &trans                 &trans            &bt BT_SEL 0       &bt BT_SEL 1    &bt BT_SEL 2
             >;
         };
 
