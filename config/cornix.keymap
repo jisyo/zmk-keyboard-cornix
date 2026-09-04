@@ -141,7 +141,7 @@
         compatible = "zmk,combos";
 
         ime {
-            bindings = <&kp LC(SPACE)>;
+            bindings = <&kp LANG_ZENKAKUHANKAKU>;
             key-positions = <19 20>;
         };
 
